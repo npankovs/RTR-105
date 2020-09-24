@@ -113,3 +113,47 @@ Datormācība (pamatkurss) elektroniskā klade
    97  l -lt
    98  ls -lt
    99  history
+   1  VirtualBox --startvm XP
+    2  quartus
+    3  ls
+    4  whereis ls
+    5  ls -l /bin/ls
+    6  cat /bin/ls
+    7  whereis ls
+    8  echo $PATH
+    9  pwd
+   10  ls -lt
+   11  nano my_first_shell_script.sh
+   12  nano my_first shell_script.sh
+   13  fg
+   14  nano my_first_shell_script.sh
+   15  pwd
+   16  ls =lt
+   17  ls -lt
+   18  echo $PATH
+   19  pwd
+   20  ls -l
+   21  ls
+   22  pwd
+   23  echo $PATH
+   24  PATH=$PATH:~
+   25  echo $PATH
+   26  ls -l
+   27  pwd
+   28  ls
+   29  /home/user/my_first_shell_script.sh
+   30  ls -l /bin/ls
+   31  ls -l
+   32  chmod 754  my_first_shell_script.sh
+   33  ls -l
+   34  /home/user/my_first_shell_script.sh 
+   35  ls -lt
+   36  ls -l
+   37  ls ABC/
+   38  ls EFG/
+   39  ls -l EFG/c.txt 
+   40  cat my my_first_shell_script.sh 
+   41  whoami
+   42  groups
+   43  history
+
