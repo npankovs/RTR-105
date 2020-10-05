@@ -157,699 +157,84 @@ Datormācība (pamatkurss) elektroniskā klade
    42  groups
    43  history
    
-   user@epk428-13:~$ ls -lt
-total 36
-drwxr-xr-x 2 user user 4096 Aug 26  2019  Downloads
-drwxr-xr-x 2 user user 4096 Aug 26  2019  Desktop
-drwxrwxr-x 3 user user 4096 Mar 26  2019 'VirtualBox VMs'
-drwxrwxr-x 3 user user 4096 Mar  5  2018  Documents
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Music
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Pictures
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Public
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Templates
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Videos
-user@epk428-13:~$ https://github.com/npankovs/RTR-105
-bash: https://github.com/npankovs/RTR-105: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105: No such file or directory
-bash: https://github.com/npankovs/RTR-105:: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105: No such file or directory
-bash: https://github.com/npankovs/RTR-105:: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105: No such file or directory
-bash: https://github.com/npankovs/RTR-105:: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105 RTR 105
-bash: https://github.com/npankovs/RTR-105: No such file or directory
-user@epk428-13:~$ git clone https://github.com/npankovs/RTR-105
-Cloning into 'RTR-105'...
-remote: Enumerating objects: 15, done.
-remote: Counting objects: 100% (15/15), done.
-remote: Compressing objects: 100% (10/10), done.
-remote: Total 15 (delta 3), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (15/15), done.
-user@epk428-13:~$ cd RTR-105
-user@epk428-13:~/RTR-105$ cd GCC
-bash: cd: GCC: No such file or directory
-user@epk428-13:~/RTR-105$ mkdir GCC
-user@epk428-13:~/RTR-105$ cd GCC
-user@epk428-13:~/RTR-105/GCC$ pwd
-/home/user/RTR-105/GCC
-user@epk428-13:~/RTR-105/GCC$ cat code1.c
-cat: code1.c: No such file or directory
-user@epk428-13:~/RTR-105/GCC$ pwd
-/home/user/RTR-105/GCC
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 0
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 12 Oct  5 10:41 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main () {}
- ^~~~
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rwxr-xr-x 1 user user 8168 Oct  5 10:43 a.out
--rw-r--r-- 1 user user   12 Oct  5 10:41 code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rwxr-xr-x 1 user user 8168 Oct  5 10:43 a.out
--rw-r--r-- 1 user user   12 Oct  5 10:41 code1.c
-user@epk428-13:~/RTR-105/GCC$ echo $?
-0
-user@epk428-13:~/RTR-105/GCC$ cat code1.c
-main () {}
-
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- mainn () {}
- ^~~~~
-/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
-(.text+0x20): undefined reference to `main'
-collect2: error: ld returned 1 exit status
-user@epk428-13:~/RTR-105/GCC$ echo $?
-1
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 13 Oct  5 10:47 code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 13 Oct  5 10:47 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
- main{}
-     ^
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 8 Oct  5 10:49 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 10 Oct  5 10:50 code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 10 Oct  5 10:50 code1.c
-user@epk428-13:~/RTR-105/GCC$ ./code1.out
-bash: ./code1.out: No such file or directory
-user@epk428-13:~/RTR-105/GCC$ cat code1.c
-main(){}
-
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main(){}
- ^~~~
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rwxr-xr-x 1 user user 8168 Oct  5 10:53 a.out
--rw-r--r-- 1 user user   10 Oct  5 10:50 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rw-r--r-- 1 user user   10 Oct  5 10:56 code1.c
--rwxr-xr-x 1 user user 8168 Oct  5 10:53 a.out
-user@epk428-13:~/RTR-105/GCC$ ./a.out
-user@epk428-13:~/RTR-105/GCC$ echo $?
-0
-user@epk428-13:~/RTR-105/GCC$ cp code1.c code3.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ gcc code3.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 16
--rwxr-xr-x 1 user user 8168 Oct  5 10:58 a.out
--rw-r--r-- 1 user user   26 Oct  5 10:58 code3.c
--rw-r--r-- 1 user user   10 Oct  5 10:56 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 16
--rw-r--r-- 1 user user   28 Oct  5 11:00 code3.c
--rwxr-xr-x 1 user user 8168 Oct  5 10:58 a.out
--rw-r--r-- 1 user user   10 Oct  5 10:56 code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code3.c
-user@epk428-13:~/RTR-105/GCC$ ./a.out
-user@epk428-13:~/RTR-105/GCC$ echo $?
-100
-user@epk428-13:~/RTR-105/GCC$ cat code3.c
-int main()
-{
-return 100;
-}
-
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-Use "fg" to return to nano.
-
-[1]+  Stopped                 nano code3.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ cp code3.c code4.c
-user@epk428-13:~/RTR-105/GCC$ nano code4.c
-user@epk428-13:~/RTR-105/GCC$ gcc code4.c
-code4.c:1:6: error: two or more data types in declaration specifiers
- void int main()
-      ^~~
-user@epk428-13:~/RTR-105/GCC$ nano code4.c
-user@epk428-13:~/RTR-105/GCC$ gcc code4.c
-code4.c:1:6: error: two or more data types in declaration specifiers
- void int main()
-      ^~~
-user@epk428-13:~/RTR-105/GCC$ nano code4.c
-user@epk428-13:~/RTR-105/GCC$ gcc code4.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main ()
- ^~~~
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:6:1: error: expected ‘;’ before ‘return’
- return 0;
- ^~~~~~
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ cat HelloWorld.c
-int main () 
-{
-
-//Hello World!
-//Hello World!
-"Hello World";
-return 0;
-}
-
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:7:1: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
- printf("Hello World");
- ^~~~~~
-HelloWorld.c:7:1: warning: incompatible implicit declaration of built-in function ‘printf’
-HelloWorld.c:7:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-HelloWorld.c:8:1: error: unknown type name ‘lai’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
- ^~~
-HelloWorld.c:8:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘str’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-            ^~~
-HelloWorld.c:8:15: error: stray ‘\304’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-               ^
-HelloWorld.c:8:16: error: stray ‘\201’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                ^
-HelloWorld.c:8:18: error: stray ‘\304’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                  ^
-HelloWorld.c:8:19: error: stray ‘\201’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                   ^
-HelloWorld.c:8:27: error: stray ‘\304’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                           ^
-HelloWorld.c:8:28: error: stray ‘\201’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                            ^
-HelloWorld.c:8:34: error: stray ‘\304’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                  ^
-HelloWorld.c:8:35: error: stray ‘\223’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                   ^
-HelloWorld.c:8:54: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                      ^
-HelloWorld.c:8:55: error: stray ‘\223’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                       ^
-HelloWorld.c:8:62: error: stray ‘#’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                                                              ^
-HelloWorld.c:8:77: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                             ^
-HelloWorld.c:8:78: error: stray ‘\253’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                              ^
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:10:1: error: unknown type name ‘lai’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
- ^~~
-HelloWorld.c:10:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘str’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-            ^~~
-HelloWorld.c:10:15: error: stray ‘\304’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-               ^
-HelloWorld.c:10:16: error: stray ‘\201’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                ^
-HelloWorld.c:10:18: error: stray ‘\304’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                  ^
-HelloWorld.c:10:19: error: stray ‘\201’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                   ^
-HelloWorld.c:10:27: error: stray ‘\304’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                           ^
-HelloWorld.c:10:28: error: stray ‘\201’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                            ^
-HelloWorld.c:10:34: error: stray ‘\304’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                  ^
-HelloWorld.c:10:35: error: stray ‘\223’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                   ^
-HelloWorld.c:10:54: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                      ^
-HelloWorld.c:10:55: error: stray ‘\223’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                       ^
-HelloWorld.c:10:62: error: stray ‘#’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                                                              ^
-HelloWorld.c:10:77: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                             ^
-HelloWorld.c:10:78: error: stray ‘\253’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                              ^
-HelloWorld.c: At top level:
-HelloWorld.c:14:1: error: unterminated comment
- /*
- ^
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:10:1: error: unknown type name ‘lai’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
- ^~~
-HelloWorld.c:10:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘str’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-            ^~~
-HelloWorld.c:10:15: error: stray ‘\304’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-               ^
-HelloWorld.c:10:16: error: stray ‘\201’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                ^
-HelloWorld.c:10:18: error: stray ‘\304’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                  ^
-HelloWorld.c:10:19: error: stray ‘\201’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                   ^
-HelloWorld.c:10:27: error: stray ‘\304’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                           ^
-HelloWorld.c:10:28: error: stray ‘\201’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                            ^
-HelloWorld.c:10:34: error: stray ‘\304’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                  ^
-HelloWorld.c:10:35: error: stray ‘\223’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                   ^
-HelloWorld.c:10:54: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                      ^
-HelloWorld.c:10:55: error: stray ‘\223’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                       ^
-HelloWorld.c:10:62: error: stray ‘#’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                                                              ^
-HelloWorld.c:10:77: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                             ^
-HelloWorld.c:10:78: error: stray ‘\253’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                              ^
-HelloWorld.c: At top level:
-HelloWorld.c:14:1: error: unterminated comment
- /*
- ^
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-Use "fg" to return to nano.
-
-[2]+  Stopped                 nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ 
-user@epk428-13:~$ ls -lt
-total 36
-drwxr-xr-x 2 user user 4096 Aug 26  2019  Downloads
-drwxr-xr-x 2 user user 4096 Aug 26  2019  Desktop
-drwxrwxr-x 3 user user 4096 Mar 26  2019 'VirtualBox VMs'
-drwxrwxr-x 3 user user 4096 Mar  5  2018  Documents
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Music
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Pictures
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Public
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Templates
-drwxr-xr-x 2 user user 4096 Mar  5  2018  Videos
-user@epk428-13:~$ https://github.com/npankovs/RTR-105
-bash: https://github.com/npankovs/RTR-105: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105: No such file or directory
-bash: https://github.com/npankovs/RTR-105:: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105: No such file or directory
-bash: https://github.com/npankovs/RTR-105:: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105: No such file or directory
-bash: https://github.com/npankovs/RTR-105:: No such file or directory
-user@epk428-13:~$ https://github.com/npankovs/RTR-105 RTR 105
-bash: https://github.com/npankovs/RTR-105: No such file or directory
-user@epk428-13:~$ git clone https://github.com/npankovs/RTR-105
-Cloning into 'RTR-105'...
-remote: Enumerating objects: 15, done.
-remote: Counting objects: 100% (15/15), done.
-remote: Compressing objects: 100% (10/10), done.
-remote: Total 15 (delta 3), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (15/15), done.
-user@epk428-13:~$ cd RTR-105
-user@epk428-13:~/RTR-105$ cd GCC
-bash: cd: GCC: No such file or directory
-user@epk428-13:~/RTR-105$ mkdir GCC
-user@epk428-13:~/RTR-105$ cd GCC
-user@epk428-13:~/RTR-105/GCC$ pwd
-/home/user/RTR-105/GCC
-user@epk428-13:~/RTR-105/GCC$ cat code1.c
-cat: code1.c: No such file or directory
-user@epk428-13:~/RTR-105/GCC$ pwd
-/home/user/RTR-105/GCC
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 0
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 12 Oct  5 10:41 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main () {}
- ^~~~
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rwxr-xr-x 1 user user 8168 Oct  5 10:43 a.out
--rw-r--r-- 1 user user   12 Oct  5 10:41 code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rwxr-xr-x 1 user user 8168 Oct  5 10:43 a.out
--rw-r--r-- 1 user user   12 Oct  5 10:41 code1.c
-user@epk428-13:~/RTR-105/GCC$ echo $?
-0
-user@epk428-13:~/RTR-105/GCC$ cat code1.c
-main () {}
-
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- mainn () {}
- ^~~~~
-/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
-(.text+0x20): undefined reference to `main'
-collect2: error: ld returned 1 exit status
-user@epk428-13:~/RTR-105/GCC$ echo $?
-1
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 13 Oct  5 10:47 code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 13 Oct  5 10:47 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
- main{}
-     ^
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 8 Oct  5 10:49 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 10 Oct  5 10:50 code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 4
--rw-r--r-- 1 user user 10 Oct  5 10:50 code1.c
-user@epk428-13:~/RTR-105/GCC$ ./code1.out
-bash: ./code1.out: No such file or directory
-user@epk428-13:~/RTR-105/GCC$ cat code1.c
-main(){}
-
-user@epk428-13:~/RTR-105/GCC$ gcc code1.c
-code1.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main(){}
- ^~~~
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rwxr-xr-x 1 user user 8168 Oct  5 10:53 a.out
--rw-r--r-- 1 user user   10 Oct  5 10:50 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code1.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 12
--rw-r--r-- 1 user user   10 Oct  5 10:56 code1.c
--rwxr-xr-x 1 user user 8168 Oct  5 10:53 a.out
-user@epk428-13:~/RTR-105/GCC$ ./a.out
-user@epk428-13:~/RTR-105/GCC$ echo $?
-0
-user@epk428-13:~/RTR-105/GCC$ cp code1.c code3.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ gcc code3.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 16
--rwxr-xr-x 1 user user 8168 Oct  5 10:58 a.out
--rw-r--r-- 1 user user   26 Oct  5 10:58 code3.c
--rw-r--r-- 1 user user   10 Oct  5 10:56 code1.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ ls -lt
-total 16
--rw-r--r-- 1 user user   28 Oct  5 11:00 code3.c
--rwxr-xr-x 1 user user 8168 Oct  5 10:58 a.out
--rw-r--r-- 1 user user   10 Oct  5 10:56 code1.c
-user@epk428-13:~/RTR-105/GCC$ gcc code3.c
-user@epk428-13:~/RTR-105/GCC$ ./a.out
-user@epk428-13:~/RTR-105/GCC$ echo $?
-100
-user@epk428-13:~/RTR-105/GCC$ cat code3.c
-int main()
-{
-return 100;
-}
-
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-Use "fg" to return to nano.
-
-[1]+  Stopped                 nano code3.c
-user@epk428-13:~/RTR-105/GCC$ nano code3.c
-user@epk428-13:~/RTR-105/GCC$ cp code3.c code4.c
-user@epk428-13:~/RTR-105/GCC$ nano code4.c
-user@epk428-13:~/RTR-105/GCC$ gcc code4.c
-code4.c:1:6: error: two or more data types in declaration specifiers
- void int main()
-      ^~~
-user@epk428-13:~/RTR-105/GCC$ nano code4.c
-user@epk428-13:~/RTR-105/GCC$ gcc code4.c
-code4.c:1:6: error: two or more data types in declaration specifiers
- void int main()
-      ^~~
-user@epk428-13:~/RTR-105/GCC$ nano code4.c
-user@epk428-13:~/RTR-105/GCC$ gcc code4.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main ()
- ^~~~
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:6:1: error: expected ‘;’ before ‘return’
- return 0;
- ^~~~~~
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ cat HelloWorld.c
-int main () 
-{
-
-//Hello World!
-//Hello World!
-"Hello World";
-return 0;
-}
-
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:7:1: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
- printf("Hello World");
- ^~~~~~
-HelloWorld.c:7:1: warning: incompatible implicit declaration of built-in function ‘printf’
-HelloWorld.c:7:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
-HelloWorld.c:8:1: error: unknown type name ‘lai’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
- ^~~
-HelloWorld.c:8:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘str’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-            ^~~
-HelloWorld.c:8:15: error: stray ‘\304’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-               ^
-HelloWorld.c:8:16: error: stray ‘\201’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                ^
-HelloWorld.c:8:18: error: stray ‘\304’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                  ^
-HelloWorld.c:8:19: error: stray ‘\201’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                   ^
-HelloWorld.c:8:27: error: stray ‘\304’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                           ^
-HelloWorld.c:8:28: error: stray ‘\201’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                            ^
-HelloWorld.c:8:34: error: stray ‘\304’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                  ^
-HelloWorld.c:8:35: error: stray ‘\223’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                   ^
-HelloWorld.c:8:54: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                      ^
-HelloWorld.c:8:55: error: stray ‘\223’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                       ^
-HelloWorld.c:8:62: error: stray ‘#’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                                                              ^
-HelloWorld.c:8:77: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                             ^
-HelloWorld.c:8:78: error: stray ‘\253’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                              ^
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:10:1: error: unknown type name ‘lai’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
- ^~~
-HelloWorld.c:10:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘str’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-            ^~~
-HelloWorld.c:10:15: error: stray ‘\304’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-               ^
-HelloWorld.c:10:16: error: stray ‘\201’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                ^
-HelloWorld.c:10:18: error: stray ‘\304’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                  ^
-HelloWorld.c:10:19: error: stray ‘\201’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                   ^
-HelloWorld.c:10:27: error: stray ‘\304’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                           ^
-HelloWorld.c:10:28: error: stray ‘\201’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                            ^
-HelloWorld.c:10:34: error: stray ‘\304’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                  ^
-HelloWorld.c:10:35: error: stray ‘\223’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                   ^
-HelloWorld.c:10:54: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                      ^
-HelloWorld.c:10:55: error: stray ‘\223’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                       ^
-HelloWorld.c:10:62: error: stray ‘#’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                                                              ^
-HelloWorld.c:10:77: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                             ^
-HelloWorld.c:10:78: error: stray ‘\253’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                              ^
-HelloWorld.c: At top level:
-HelloWorld.c:14:1: error: unterminated comment
- /*
- ^
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-HelloWorld.c: In function ‘main’:
-HelloWorld.c:10:1: error: unknown type name ‘lai’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
- ^~~
-HelloWorld.c:10:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘str’
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-            ^~~
-HelloWorld.c:10:15: error: stray ‘\304’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-               ^
-HelloWorld.c:10:16: error: stray ‘\201’ in program
- lai printf str��dātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                ^
-HelloWorld.c:10:18: error: stray ‘\304’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                  ^
-HelloWorld.c:10:19: error: stray ‘\201’ in program
- lai printf strād��tu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                   ^
-HelloWorld.c:10:27: error: stray ‘\304’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                           ^
-HelloWorld.c:10:28: error: stray ‘\201’ in program
- lai printf strādātu ir j��pieslēdz stdio.h bibliotēka ar #include direktīvu
-                            ^
-HelloWorld.c:10:34: error: stray ‘\304’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                  ^
-HelloWorld.c:10:35: error: stray ‘\223’ in program
- lai printf strādātu ir jāpiesl��dz stdio.h bibliotēka ar #include direktīvu
-                                   ^
-HelloWorld.c:10:54: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                      ^
-HelloWorld.c:10:55: error: stray ‘\223’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliot��ka ar #include direktīvu
-                                                       ^
-HelloWorld.c:10:62: error: stray ‘#’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direktīvu
-                                                              ^
-HelloWorld.c:10:77: error: stray ‘\304’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                             ^
-HelloWorld.c:10:78: error: stray ‘\253’ in program
- lai printf strādātu ir jāpieslēdz stdio.h bibliotēka ar #include direkt��vu
-                                                                              ^
-HelloWorld.c: At top level:
-HelloWorld.c:14:1: error: unterminated comment
- /*
- ^
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ gcc HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-Use "fg" to return to nano.
-
-[2]+  Stopped                 nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ nano HelloWorld.c
-user@epk428-13:~/RTR-105/GCC$ 
-
-
+   user@epk428-13:~/RTR-105$ history
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  ls -lt
+    4  https://github.com/npankovs/RTR-105
+    5  https://github.com/npankovs/RTR-105: No such file or directory
+    6  https://github.com/npankovs/RTR-105 RTR 105
+    7  git clone https://github.com/npankovs/RTR-105
+    8  cd RTR-105
+    9  cd GCC
+   10  mkdir GCC
+   11  cd GCC
+   12  pwd
+   13  cat code1.c
+   14  pwd
+   15  ls -lt
+   16  nano code1.c
+   17  ls -lt
+   18  nano code1.c
+   19  gcc code1.c
+   20  ls -lt
+   21  echo $?
+   22  cat code1.c
+   23  nano code1.c
+   24  gcc code1.c
+   25  echo $?
+   26  ls -lt
+   27  nano code1.c
+   28  gcc code1.c
+   29  ls -lt
+   30  nano code1.c
+   31  ls -lt
+   32  ./code1.out
+   33  cat code1.c
+   34  gcc code1.c
+   35  ls -lt
+   36  nano code1.c
+   37  ls -lt
+   38  ./a.out
+   39  echo $?
+   40  cp code1.c code3.c
+   41  nano code3.c
+   42  gcc code3.c
+   43  ls -lt
+   44  nano code3.c
+   45  ls -lt
+   46  gcc code3.c
+   47  ./a.out
+   48  echo $?
+   49  cat code3.c
+   50  nano code3.c
+   51  cp code3.c code4.c
+   52  nano code4.c
+   53  gcc code4.c
+   54  nano code4.c
+   55  gcc code4.c
+   56  nano code4.c
+   57  gcc code4.c
+   58  nano HelloWorld.c
+   59  gcc HelloWorld.c
+   60  nano HelloWorld.c
+   61  gcc HelloWorld.c
+   62  cat HelloWorld.c
+   63  nano HelloWorld.c
+   64  gcc HelloWorld.c
+   65  nano HelloWorld.c
+   66  gcc HelloWorld.c
+   67  nano HelloWorld.c
+   68  gcc HelloWorld.c
+   69  nano HelloWorld.c
+   70  rm *.out
+   71  ls -lt
+   72  pwd
+   73  cd /RTR-105
+   74  RTR - 105
+   75  cd ..
+   76  pw
+   77  pwd
+   78  history
+user@epk428-13:~/RTR-105$ ^C
+user@epk428-13:~/RTR-105$ 
