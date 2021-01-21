@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <wchar.h>
-//#include <fcntl.h>
 #include <locale.h>
 #include <stdlib.h>
 
