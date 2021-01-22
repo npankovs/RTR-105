@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float a, b, y, x, der1x, der2x, delta_x, der1xAnalytical, der1xFiniteD, der2xAnalytical,der2xFiniteD;
+float a, b, y, x,delta_x, der1xAnalytical, der1xFiniteD, der2xAnalytical,der2xFiniteD;
 FILE *fp = NULL;
 int main ()
 {
