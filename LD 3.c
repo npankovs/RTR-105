@@ -23,7 +23,7 @@ int main ()
       der1xFiniteD = -sin(x*x)*2*x;
       der2xAnalytical =((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x ));
       der2xFiniteD = -2*sin(x*x)-4*x*x*cos(x*x);
-      fprintf(fp, "%f,%f,%f,%f,%f\n", y,der1xAnalytical,der1xFiniteD,der2xAnalytical,der2xFiniteD );
+      fprintf(fp, "%10.2f,%f,%f,%f,%f\n", y,der1xAnalytical,der1xFiniteD,der2xAnalytical,der2xFiniteD );
       x += delta_x;
       
 }
