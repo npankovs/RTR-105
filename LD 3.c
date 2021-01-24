@@ -25,16 +25,14 @@ int main ()
     //der2xFD =(((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x )))/(delta_x)*(delta_x);
     //der2xFD=(cos(x*x)-2*(cos(x+delta_x)*(x+delta_x))+cos(x+delta_x+delta_x)*(x+delta_x+delta_x))/delta_x*delta_x;
     //der2xFD = ((cos(x+2*delta_x)*(x+2*delta_x))-(2*cos(x+delta_x)*(x+delta_x))+cos(x*x))/delta_x*delta_x;
-    der2xFD = -sin((x+delta_x)*(x+delta_x))*2*(x+delta_x);
+    der2xFD = (-sin((x+delta_x)*(x+delta_x))*2*(x+delta_x)-(-sin(x*x)*2*x))/delta_x;
     
     fprintf(fp,"%0.2f \t%0.2f \t%0.2f \t%0.2f \t%0.2f \t%0.2f\n",x,y,der1xAN,der1xFD,der2xAN,der2xFD);
     x += delta_x;
  
 }
   
-  
-  
-return 0;
+  return 0;
 }
 
 
