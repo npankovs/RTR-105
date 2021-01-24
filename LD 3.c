@@ -21,7 +21,7 @@ int main ()
     der1xAN = -sin(x*x)*2*x;
     der1xFD = (cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
     der2xAN = -2*sin(x*x)-4*x*x*cos(x*x);
-    //der2xAN =((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
+    //der2xFD =((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
     //der2xFD =(((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x )))/(delta_x)*(delta_x);
     //der2xFD=(cos(x*x)-2*(cos(x+delta_x)*(x+delta_x))+cos(x+delta_x+delta_x)*(x+delta_x+delta_x))/delta_x*delta_x;
     der2xFD = ((cos(x+2*delta_x)*(x+2*delta_x))-(2*cos(x+delta_x)*(x+delta_x))+cos(x*x))/delta_x*delta_x;
