@@ -18,6 +18,48 @@ int main ()
   fprintf(fp, "  x      y     der1xAN der1xFD der2xAN der2xFD\n");
   while(x<b){
     y = cos(x*x);
+    der1xAN = -sin(x*x)*2*x;
+    der1xFD = (cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
+    der2xAN = -2*sin(x*x)-4*x*x*cos(x*x);
+    //der2xAN =((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
+    //der2xFD =(((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x )))/(delta_x)*(delta_x);
+    //der2xFD=(cos(x*x)-2*(cos(x+delta_x)*(x+delta_x))+cos(x+delta_x+delta_x)*(x+delta_x+delta_x))/delta_x*delta_x;
+    der2xFD = ((cos(x+2*delta_x)*(x+2*delta_x))-(2*cos(x+delta_x)*(x+delta_x))+cos(x*x))/delta_x*delta_x;
+    
+    fprintf(fp,"%0.2f \t%0.2f \t%0.2f \t%0.2f \t%0.2f \t%0.2f\n",x,y,der1xAN,der1xFD,der2xAN,der2xFD);
+    x += delta_x;
+ 
+}
+  
+  
+  
+return 0;
+}
+
+
+
+
+
+/*#include <stdio.h>
+#include <math.h>
+
+float a, b, y, x,delta_x, der1xAN, der1xFD, der2xAN,der2xFD;
+FILE *fp = NULL;
+int main ()
+{
+  printf ("Ievadi sakuma vertibu: ");
+  scanf ("%f", &a);
+    printf ("Ievadi beigu vertibu: ");
+  scanf ("%f", &b);
+    printf ("Ievadi precizitati: ");
+  scanf ("%f", &delta_x);
+  
+  x=a;
+  
+  fp = fopen("derivative.dat" ,"w");
+  fprintf(fp, "  x      y     der1xAN der1xFD der2xAN der2xFD\n");
+  while(x<b){
+    y = cos(x*x);
     der1xAN =(cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
     der1xFD = -sin(x*x)*2*x;
     der2xAN =((cos((x+delta_x)*(x+delta_x))-cos( x*x ))+delta_x)-(cos((x+delta_x)*(x+delta_x))-cos( x*x ))/delta_x;
